@@ -10,7 +10,7 @@ DIALECT = 'mysql'
 DRIVER = 'pymysql'
 USERNAME = 'root'
 PASSWORD = '123456'
-HOST = '172.20.0.134'
+HOST = '0.0.0.0'
 PORT = '9301'
 DATABASE = 'checkdata'
 
@@ -21,7 +21,7 @@ SQLALCHEMY_DATABASE_URI = "{}+{}://{}:{}@{}:{}/{}?charset=utf8".format(DIALECT, 
 DATABASE_BINDS = "{}+{}://{}:{}@{}:{}/".format(DIALECT, DRIVER, USERNAME, PASSWORD, HOST, PORT)
 
 SQLALCHEMY_BINDS = {
-    "db_iris": DATABASE_BINDS + 'db_iris',
+    "db_test": DATABASE_BINDS + 'db_test',
     "test": DATABASE_BINDS + 'test'
 }
 
